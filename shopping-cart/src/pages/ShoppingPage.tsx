@@ -1,3 +1,4 @@
+import Cards from "../components/CardSection/Cards";
 import Header from "../components/Header/Header"
 import Navbar from "../components/Navbar/Navbar";
 
@@ -6,6 +7,7 @@ const ShoppingPage = () => {
         <>
             <Header />
             <Navbar />
+            <Cards />
         </>
     )
 }

@@ -1,0 +1,111 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    gap: 15px;
+    padding: 100px;
+}
+
+.cardsContainer :nth-child(1) {
+    grid-row: span 2;
+}
+
+.cardsContainer :nth-child(2) {
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+.cardsContainer :nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.cardsContainer :nth-child(4) {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.overlayText {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px 12px;
+  font-weight: 700;
+}
+
+.items {
+    color: #2DC071;
+}
+
+.overlayText h2, .more {
+    color: #252B42;
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 10px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cardsContainer :nth-child(1),
+  .cardsContainer :nth-child(2),
+  .cardsContainer :nth-child(3),
+  .cardsContainer :nth-child(4) {
+    grid-area: unset;
+    grid-row: unset;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .cardsContainer :nth-child(1),
+  .cardsContainer :nth-child(2),
+  .cardsContainer :nth-child(3),
+  .cardsContainer :nth-child(4) {
+    grid-area: unset;
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
