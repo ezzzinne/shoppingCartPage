@@ -1,0 +1,51 @@
+.container {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    background-color: #23856D;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.firstItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.secondItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.thirdItem, .thirdItem div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;  
+   flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+    .container {
+        display: none;
+    }
+}

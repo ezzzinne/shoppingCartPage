@@ -1,0 +1,150 @@
+.mobileContainer {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 10px 30px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.mobileIcons {
+    display: flex;
+    gap: 18px;
+}
+
+.mobileNavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    gap: 25px;
+}
+
+.mobileNavbar :nth-child(2) {
+    font-weight: 400;
+}
+
+.mobileNavItems {
+    color: #737373;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 10px 30px;
+    width: 100%;
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.sectionOne {
+    color: #252B42;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sectionTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    gap: 350px;
+   
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;  
+}
+
+.links :nth-child(2) {
+    color: #252B42;
+    font-weight: 500;
+}
+
+.linkItem {
+    text-decoration: none;
+    color: #737373;
+    font-weight: 700;
+}
+
+.linkItem span {
+    margin: 0 4px 0 8px;
+}
+
+.links, .icons {
+    flex-grow: 1;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.icons :nth-child(3), .icons :nth-child(4) {
+    font-weight: 400;
+}
+
+.iconItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #23A6F0;
+    font-weight: 700;
+}
+
+/* Tablet layout */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .sectionTwo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .linkItem {
+    font-size: 14px;
+  }
+
+  .icons {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .iconItems p {
+    font-size: 12px;
+  }
+}
