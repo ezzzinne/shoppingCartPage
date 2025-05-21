@@ -5,6 +5,7 @@
     align-content: center;
     gap: 15px;
     padding: 100px;
+    max-width: 100%;
 }
 
 .cardsContainer :nth-child(1) {
