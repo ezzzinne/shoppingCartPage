@@ -6,10 +6,10 @@ import styles from './Products.module.css';
 const Products = () => {
     const { data, isLoading, isError } = useGetProductsQuery();
     const products = data?.products ?? [];
-    const [visibleCount, setVisibleCount] = useState<number>(8);
+    const [visibleCount, setVisibleCount] = useState<number>(10);
 
     const handleLoadMore = () => {
-        setVisibleCount((prev) => prev + 8);
+        setVisibleCount((prev) => prev + 5);
     };
 
     if (isLoading) return <p className={styles.text}>Loading products...</p>
