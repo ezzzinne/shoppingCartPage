@@ -1,4 +1,5 @@
 import Cards from "../components/CardSection/Cards";
+import Posts from "../components/FeaturedPosts/Posts";
 import Header from "../components/Header/Header"
 import Navbar from "../components/Navbar/Navbar";
 import Products from "../components/Products/Products";
@@ -12,6 +13,7 @@ const ShoppingPage = () => {
             <Cards />
             <Products />
             <Services />
+            <Posts />
         </>
     )
 }
