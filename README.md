@@ -56,14 +56,14 @@ A modern shopping cart page built using **TypeScript**, **Redux Toolkit (RTK)**,
 
     src/
     ├── app/                 # RTK Query API
-    │   └── store.ts
+    │   └── productsApi.ts
     ├── components/          # UI components (ProductCard, CardSection, Navbar, etc.)
     ├── pages/               # Page components (ShoppingPage.tsx)
     ├── redux/               # Redux store configuration
+    │   └── store.ts
     ├── App.tsx              # Root app component
     ├── main.tsx             # Vite entry point
     
-
 ---
 
 ## 🌐 API Source
