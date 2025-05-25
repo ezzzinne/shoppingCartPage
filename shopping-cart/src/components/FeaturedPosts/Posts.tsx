@@ -1,5 +1,6 @@
 import styles from './Posts.module.css';
-import Post1 from '../../assets/post 1.jpg';
+// import Post1 from '../../assets/post 1.jpg';
+import Image1 from '../../assets/image-1.svg';
 import Post2 from '../../assets/post 2.jpg';
 import Post3 from '../../assets/post 3.jpg';
 import Clock from '../../assets/clock.svg';
@@ -17,7 +18,7 @@ const Posts = () => {
                 <div className={styles.postContainer}>
                     <div className={styles.featuresCard}>
                         <div className={styles.featuresImageWrapper}>
-                            <img src={Post1} alt="Post1" className={styles.featuresImage} />
+                            <img src={Image1} alt="Post1" className={styles.featuresImage} />
                             <span className={styles.badge}>NEW</span> 
                         </div>
                         <div className={styles.featuresContent}>
