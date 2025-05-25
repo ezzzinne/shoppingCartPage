@@ -1,0 +1,106 @@
+.footer {
+  padding: 40px 80px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #FAFAFA;
+  color: #252b42;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.topRow h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.socialIcons img {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+}
+
+.linkGrid h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #252B42;
+}
+
+.linkGrid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkGrid li {
+  color: #737373;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.subscribe input {
+  padding: 10px;
+  background-color: #F9F9F9;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px 0 0 3px;
+  width: 70%;
+}
+
+.subscribe button {
+  padding: 10px 16px;
+  background-color: #23a6f0;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+}
+
+.inputWrapper {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.subscribe p {
+    color: #737373;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.bottomNote {
+  text-align: start;
+  margin-top: 40px;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 40px;
+  }
+
+  .topRow {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+}
