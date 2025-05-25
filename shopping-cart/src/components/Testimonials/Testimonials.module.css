@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 6%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonial {
+  max-width: 400px;
+  text-align: center;
+}
+
+.testimonial h3 {
+  font-size: 24px;
+  color: #252B42;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.message {
+  font-size: 14px;
+  font-weight: 700;
+  color: #737373;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.name {
+  font-size: 14px;
+  color: #23A6F0;
+  font-weight: 700;
+  margin: 0;
+}
+
+.role {
+  font-size: 14px;
+  font-weight: 700;
+  color: #252B42;
+  margin: 6px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 350px;
+  margin: 40px 0;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
