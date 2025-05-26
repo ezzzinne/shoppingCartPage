@@ -14,6 +14,7 @@ const Posts = () => {
                     <h6>Practice Advice</h6>
                     <h2>Featured Posts</h2>
                 </div>
+
                 <div className={styles.postContainer}>
                     <div className={styles.featuresCard}>
                         <div className={styles.featuresImageWrapper}>
@@ -44,6 +45,7 @@ const Posts = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className={styles.featuresCard}>
                         <div className={styles.featuresImageWrapper}>
                             <img src={Post2} alt="Post2" className={styles.featuresImage} />
@@ -73,6 +75,7 @@ const Posts = () => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className={styles.featuresCard}>
                         <div className={styles.featuresImageWrapper}>
                             <img src={Post3} alt="Post3" className={styles.featuresImage} />
