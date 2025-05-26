@@ -1,7 +1,7 @@
 import styles from './Posts.module.css';
-import Post1 from '../../assets/post 1.jpg';
-import Post2 from '../../assets/post 2.jpg';
-import Post3 from '../../assets/post 3.jpg';
+import Post1 from '../../assets/post 1.svg';
+import Post2 from '../../assets/post 2.svg';
+import Post3 from '../../assets/post 3.svg';
 import Clock from '../../assets/clock.svg';
 import Comments from '../../assets/comments.svg';
 import Arrow from '../../assets/arrow.svg';
